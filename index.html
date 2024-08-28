@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Dashboar Ifood</title>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
 </head>
 <body >
 
     <!----  MENU LATERAL  ---->
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logo-info">
             <img src="/imgs/ifood-43.svg">
         </div>
@@ -23,7 +24,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="projeto/plano.html">
                     <i class='bx bxs-copy-alt'></i>
                     <span class="link-nome">Planos</span>
                 </a>
@@ -74,15 +75,14 @@
             </li>
         </ul>
     </div>
-
-
-    <!-- CONTEUDO -->
+    <!-- MENU LATERAL -->
+	 
 
   <!-- CONTEUDO -->
   <section id="content">
     <!-- NAVBAR -->
     <nav>
-        <i class='bx bx-menu'></i>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <a href="#" class="nav-link">Categorias</a>
         <form action="#">
             <div class="form-input">
@@ -113,13 +113,13 @@
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="#">Home</a>
+							<a class="active" href="/index.html">Inicio</a>
 						</li>
 					</ul>
 				</div>
 				<a href="#" class="btn-download">
 					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Baixar PDF</span>
+					<span class="text">Baixar Métricas</span>
 				</a>
 			</div>
 
@@ -243,7 +243,7 @@
 	<!-- CONTEUDO -->
 	
 
-	<script src="script.js"></script>
+	<script src="/scripts/script.js"></script>
 
 
 </body>
