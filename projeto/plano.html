@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
+</head>
+<body >
+
+    <!----  MENU LATERAL  ---->
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-info">
+            <img src="/imgs/ifood-43.svg">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link-nome">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="projeto/plano.html">
+                    <i class='bx bxs-copy-alt'></i>
+                    <span class="link-nome">Planos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bank'></i>
+                    <span class="link-nome">Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="link-nome">Desempenho</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-plus-circle'></i>
+                    <span class="link-nome">Para você</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link-nome">Relatório de vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-nome">Configurações</span>
+                </a>
+            </li>
+            
+            <li>
+            <div class="perfil-config">
+                <div class="conteudo-perfil">
+                    <img src="/imgs/1010.png" alt="perfil">
+                    
+                    </div>
+                    <div class="nome-perfil">
+                        <div class="nome-entidade">@PratoFino</div>
+                        <div class="situacao">Restaurante Aberto</div>
+                    </div>
+                    <a href="#"><i class='bx bx-log-out' style="color: red;"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU LATERAL -->
+	 
+
+  <!-- CONTEUDO -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="nav-link">Categorias</a>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">99</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="/imgs/1010.png">
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+		<!-- PRINCIPAL -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="/index.html">Planos</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Baixar Contrato</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-bookmark' ></i>
+					<span class="text">
+						<h3>2150</h3>
+						<p>Planos Ativos</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-recycle' ></i>
+					<span class="text">
+						<h3>1700</h3>
+						<p>Assinaturas renovadas</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-x-circle' ></i>
+					<span class="text">
+						<h3>230</h3>
+						<p>Cancelamentos</p>
+					</span>
+				</li>
+			</ul>
+
+
+            <div class="planos">
+                <!-- Card para Plano Básico -->
+                <div class="plano" id="basico">
+                    <img src="/imgs/undraw_favourite_item_pcyo.svg" alt="Plano Básico">
+                    <div class="info">
+                        <h2>Plano Básico</h2>
+                        <ul>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Gerenciamento de Tarefas </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i>  Relatórios Básicos </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Suporte ao Cliente </li>
+                        </ul>
+                        <button>Selecionar</button>
+                    </div>
+                </div>
+            
+                <!-- Card para Plano Premium -->
+                <div class="plano" id="premium">
+                    <img src="/imgs/undraw_launching_re_tomg.svg" alt="Plano Premium">
+                    <div class="info">
+                        <h2>Plano Premium</h2>
+                        <ul>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Gerenciamento do Sistema </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Relatórios Personalizados </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Suporte Prioritário </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Acesso Offline </li>
+                        </ul>
+                        <button>Selecionar</button>
+                    </div>
+                </div>
+            
+                <!-- Card para Plano Companhia -->
+                <div class="plano" id="companhia">
+                    <img src="/imgs/undraw_street_food_re_uwex.svg" alt="Plano Companhia">
+                    <div class="info">
+                        <h2>Plano Companhia</h2>
+                        <ul>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Gerenciamento de Projetos </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Personalização Completa </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Acesso Multicanal </li>
+                            <li><i class='bx bxs-check-square' style="color: var(--red);"></i> Suporte 24/7 </li>
+                        </ul>
+                        <button>Selecionar</button>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+		<!-- PRINCIPAL -->
+	</section>
+	<!-- CONTEUDO -->
+	
+
+	<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
