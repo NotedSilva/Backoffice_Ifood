@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
+</head>
+<body >
+
+    <!----  MENU LATERAL  ---->
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-info">
+            <img src="/imgs/ifood-43.svg">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link-nome">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/plano.html">
+                    <i class='bx bxs-copy-alt'></i>
+                    <span class="link-nome">Planos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/financeiro.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="link-nome">Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/desempenho.html">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="link-nome">Desempenho</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/paraVoce.html">
+                    <i class='bx bx-plus-circle'></i>
+                    <span class="link-nome">Para você</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link-nome">Relatório de vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-nome">Configurações</span>
+                </a>
+            </li>
+            
+            <li>
+            <div class="perfil-config">
+                <div class="conteudo-perfil">
+                    <img src="/imgs/1010.png" alt="perfil">
+                    
+                    </div>
+                    <div class="nome-perfil">
+                        <div class="nome-entidade">@PratoFino</div>
+                        <div class="situacao">Restaurante Aberto</div>
+                    </div>
+                    <a href="#"><i class='bx bx-log-out' style="color: red;"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU LATERAL -->
+	 
+
+  <!-- CONTEUDO -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="nav-link">Categorias</a>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">99</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="/imgs/1010.png">
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+		<!-- PRINCIPAL -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard Financeiro</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="/index.html">Para Você</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Baixar Ofertas</span>
+                </a>
+            </div>
+        
+            <ul class="box-info">
+                <li>
+                    <i class='bx bx-gift'></i>
+                    <span class="text">
+                        <h3>20%</h3>
+                        <p>Desconto Exclusivo</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-trophy'></i>
+                    <span class="text">
+                        <h3>Premiações</h3>
+                        <p>Reconhecimento e Prêmios</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-user'></i>
+                    <span class="text">
+                        <h3>95%</h3>
+                        <p>Satisfação do Cliente</p>
+                    </span>
+                </li>
+            </ul>
+
+            <!-- Componente "Para Você" -->
+            <div class="para-voce">
+                <h2>Para Você</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <i class='bx bx-gift' style="color: var(--red);"></i>
+                        <h3>Desconto</h3>
+                        <p>Receba ofertas exclusivas e descontos especiais.</p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-megaphone' style="color: var(--red);"></i>
+                        <h3>Marketing</h3>
+                        <p>Melhore sua visibilidade com nossas ferramentas de marketing.</p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-school' style="color: var(--red);"></i>
+                        <h3>Treinamento</h3>
+                        <p>Participe de cursos e workshops para aprimorar suas habilidades.</p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bx-support' style="color: var(--red);"></i>
+                        <h3>Assistência</h3>
+                        <p>Receba suporte personalizado sempre que precisar.</p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bx-leaf' style="color: var(--red);"></i>
+                        <h3>Sustentabilidade</h3>
+                        <p>Adote práticas sustentáveis com nossa ajuda.</p>
+                    </div>
+                    <div class="card">
+                        <i class='bx bx-trophy' style="color: var(--red);"></i>
+                        <h3>Recompensas</h3>
+                        <p>Ganhe recompensas por seu desempenho e engajamento.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Componente "Para Você" -->
+            
+        </main>
+		<!-- PRINCIPAL -->
+	</section>
+	<!-- CONTEUDO -->
+	
+
+	<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
