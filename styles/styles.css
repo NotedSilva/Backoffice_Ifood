@@ -657,6 +657,273 @@ button:hover {
 
 
 
+
+/* FINANCEIRO */
+
+.vendas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.venda {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.venda .info {
+    width: 100%;
+}
+
+.venda .info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+.venda .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.venda .info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.month-sales {
+    font-weight: bold;
+    color: var(--dark);
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--lightgray);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--red);
+    transition: width 0.3s ease;
+}
+
+.progress-percent {
+    font-size: 0.7em;
+    color: var(--dark);
+	white-space: nowrap;
+}
+
+.venda .info button {
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.venda .info button:hover {
+    background-color: var(--redhover);
+}
+
+/* FINANCEIRO */
+
+
+
+/* DESEMPENHO */
+
+
+.desempenho {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+	padding: 20px;
+    box-sizing: border-box;
+}
+
+.desempenho .info {
+    width: 100%;
+	margin-bottom: 20px;
+}
+
+.desempenho .info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--primary);
+	text-align: center;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+	flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.metric {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background: var(--lightgray);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.metric h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.metric p {
+    font-size: 1.5em;
+    color: var(--dark);
+    margin: 0;
+}
+
+.grafico {
+    width: 100%;
+}
+
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar {
+    padding: 10px;
+    color: var(--light);
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.bar::after {
+    content: attr(data-month);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: var(--dark);
+}
+
+.desempenho .info button {
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+	margin-top: 10px;
+}
+
+.desempenho .info button:hover {
+    background-color: var(--redhover);
+}
+
+
+/* DESEMPENHO */
+
+
+
+
+/* PARA VOCE */
+
+.para-voce {
+    padding: 20px;
+    background: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.para-voce h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.card i {
+    font-size: 2em;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: var(--dark);
+}
+
+.card p {
+    color: var(--dark);
+    font-size: 1em;
+}
+
+
+/* PARA VOCE */
+
+
+
+
+
+
+
+
+
+
 /* TELA DINAMICA */
 
 @media (max-width: 768px) {
@@ -688,7 +955,30 @@ button:hover {
         width: calc(100% - 60px);
         left: 60px;
     }
+
+	.metrics {
+        flex-direction: column;
+    }
+
+    .metric {
+        flex: 1 1 100%;
+    }
+
+    .bar-chart {
+        flex-direction: column;
+    }
+
+    .bar {
+        flex: 1 1 auto;
+        margin-bottom: 5px;
+    }
+
+	.card {
+        flex: 1 1 calc(100% - 20px); 
+        max-width: calc(100% - 20px);
+    }
 }
+
 
 
 
@@ -738,6 +1028,28 @@ button:hover {
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
 	}
+}
+
+@media (max-width: 480px) {
+    .desempenho .info h2 {
+        font-size: 1.5em;
+    }
+
+    .metrics {
+        flex-direction: column;
+    }
+
+    .metric {
+        font-size: 0.9em;
+    }
+
+    .grafico h3 {
+        font-size: 1.2em;
+    }
+
+    .bar {
+        font-size: 0.8em;
+    }
 }
 
 
