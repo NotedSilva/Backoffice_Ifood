@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
+</head>
+<body >
+
+    <!----  MENU LATERAL  ---->
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-info">
+            <img src="/imgs/ifood-43.svg">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link-nome">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/plano.html">
+                    <i class='bx bxs-copy-alt'></i>
+                    <span class="link-nome">Planos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/financeiro.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="link-nome">Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/desempenho.html">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="link-nome">Desempenho</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/paraVoce.html">
+                    <i class='bx bx-plus-circle'></i>
+                    <span class="link-nome">Para você</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link-nome">Relatório de vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-nome">Configurações</span>
+                </a>
+            </li>
+            
+            <li>
+            <div class="perfil-config">
+                <div class="conteudo-perfil">
+                    <img src="/imgs/1010.png" alt="perfil">
+                    
+                    </div>
+                    <div class="nome-perfil">
+                        <div class="nome-entidade">@PratoFino</div>
+                        <div class="situacao">Restaurante Aberto</div>
+                    </div>
+                    <a href="#"><i class='bx bx-log-out' style="color: red;"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU LATERAL -->
+	 
+
+  <!-- CONTEUDO -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="nav-link">Categorias</a>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">99</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="/imgs/1010.png">
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+		<!-- PRINCIPAL -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Dashboard Financeiro</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="/index.html">Desempenho</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Baixar Desempenho</span>
+                </a>
+            </div>
+        
+            <ul class="box-info">
+                <li>
+                    <i class='bx bx-trending-up'></i>
+                    <span class="text">
+                        <h3>+15%</h3>
+                        <p>Crescimento Mensal</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-cube-alt'></i>
+                    <span class="text">
+                        <h3>8%</h3>
+                        <p>Taxa de Conversão</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-analyse'></i>
+                    <span class="text">
+                        <h3>85%</h3>
+                        <p>Meta de Performance</p>
+                    </span>
+                </li>
+            </ul>
+
+            <div class="desempenho">
+                <div class="info">
+                    <center><h2>Desempenho de Vendas</h2></center>
+                    <div class="metrics">
+                        <div class="metric">
+                            <h3>Total de Vendas</h3>
+                            <p>R$ 150,000</p>
+                        </div>
+                        <div class="metric">
+                            <h3>Média Mensal</h3>
+                            <p>R$ 18,750</p>
+                        </div>
+                        <div class="metric">
+                            <h3>Melhor Mês</h3>
+                            <p>Agosto: R$ 19,700</p>
+                        </div>
+                        <div class="metric">
+                            <h3>Pior Mês</h3>
+                            <p>Janeiro: R$ 10,000</p>
+                        </div>
+                    </div>
+                     <div class="grafico">
+            <h3>Comparativo Mensal</h3>
+            <div class="bar-chart">
+                <div class="bar" style="width: 50%; background-color: var(--green);" data-month="Janeiro">
+                    Janeiro: R$ 10,000
+                </div>
+                <div class="bar" style="width: 60%; background-color: var(--blue);" data-month="Fevereiro">
+                    Fevereiro: R$ 12,000
+                </div>
+                <div class="bar" style="width: 75%; background-color: var(--yellow);" data-month="Março">
+                    Março: R$ 15,000
+                </div>
+                <div class="bar" style="width: 58%; background-color: var(--orange);" data-month="Abril">
+                    Abril: R$ 11,000
+                </div>
+                <div class="bar" style="width: 78%; background-color: var(--red);" data-month="Maio">
+                    Maio: R$ 17,000
+                </div>
+                <div class="bar" style="width: 70%; background-color: rgb(180, 149, 111);" data-month="Junho">
+                    Junho: R$ 14,300
+                </div>
+                <div class="bar" style="width: 89%; background-color: burlywood;" data-month="Julho">
+                    Julho: R$ 19,000
+                </div>
+                <div class="bar" style="width: 92%; background-color: rgb(131, 113, 113);" data-month="Agosto">
+                    Agosto: R$ 19,700
+                </div>
+            </div>
+        </div>
+                    <button>Ver Detalhes</button>
+                </div>
+            </div>
+            
+        </main>
+		<!-- PRINCIPAL -->
+	</section>
+	<!-- CONTEUDO -->
+	
+
+	<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
