@@ -62,6 +62,12 @@ body {
 	transition: width 0.3s ease;
 }
 
+.sidebar-initial {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+
 
 .sidebar .logo-info {
     height: 23%;
@@ -173,7 +179,7 @@ body {
 }
 
 .sidebar.close {
-    width: 78px; /* Ajuste para o tamanho que preferir */
+    width: 78px; 
 }
 
 .sidebar.close .logo-info img {
@@ -834,8 +840,6 @@ button:hover {
     background-color: var(--redhover);
 }
 
-
-
 /* FINANCEIRO */
 
 
@@ -1154,6 +1158,13 @@ button:hover {
     }
 }
 
+
+
+.sidebar .nav-links a.active {
+    background-color: var(--redhover);
+    color: #333;
+    font-weight: bold;
+}
 
 
 
