@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
+</head>
+<body >
+
+    <!----  MENU LATERAL  ---->
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-info">
+            <img src="/imgs/ifood-43.svg">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link-nome">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/plano.html">
+                    <i class='bx bxs-copy-alt'></i>
+                    <span class="link-nome">Planos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/financeiro.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="link-nome">Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/desempenho.html">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="link-nome">Desempenho</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/paraVoce.html">
+                    <i class='bx bx-plus-circle'></i>
+                    <span class="link-nome">Para você</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/relatorioVendas.html">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link-nome">Relatório de vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-nome">Configurações</span>
+                </a>
+            </li>
+            
+            <li>
+            <div class="perfil-config">
+                <div class="conteudo-perfil">
+                    <img src="/imgs/1010.png" alt="perfil">
+                    
+                    </div>
+                    <div class="nome-perfil">
+                        <div class="nome-entidade">@PratoFino</div>
+                        <div class="situacao">Restaurante Aberto</div>
+                    </div>
+                    <a href="#"><i class='bx bx-log-out' style="color: red;"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU LATERAL -->
+	 
+
+  <!-- CONTEUDO -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="nav-link">Categorias</a>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">99</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="/imgs/1010.png">
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+		<!-- PRINCIPAL -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Relatório de Vendas</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li><a class="active" href="#">Relatório de Vendas</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-download">
+                    <i class='bx bxs-cloud-download'></i>
+                    <span class="text">Baixar Relatório</span>
+                </a>
+            </div>
+        
+            <ul class="box-info">
+                <li>
+                    <i class='bx bx-package'></i>
+                    <span class="text">
+                        <h3>Produto Mais Vendido</h3>
+                        <p>Pizza Margherita</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-map'></i>
+                    <span class="text">
+                        <h3>Região com Maior Venda</h3>
+                        <p>Zona Sul</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-time-five'></i>
+                    <span class="text">
+                        <h3>Horário de Pico</h3>
+                        <p>19:00 - 20:00</p>
+                    </span>
+                </li>
+            </ul>
+        
+            <div class="desempenho">
+                <h2 class="section-title">Indicadores de Desempenho</h2>
+        
+                <!-- Gráfico de Vendas por Região -->
+                <div class="grafico grafico-vendas">
+                    <h3>Vendas por Região</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="width: 90%;" data-region="Zona Sul">Zona Sul: R$ 70,000</div>
+                        <div class="bar" style="width: 60%;" data-region="Zona Norte">Zona Norte: R$ 45,000</div>
+                        <div class="bar" style="width: 40%;" data-region="Centro">Centro: R$ 30,000</div>
+                    </div>
+                </div>
+        
+                <!-- Gráfico de Vendas por Horário -->
+                <div class="grafico grafico-vendas">
+                    <h3>Vendas por Horário</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="width: 80%;" data-hour="12h-13h">12h-13h: R$ 40,000</div>
+                        <div class="bar" style="width: 85%;" data-hour="19h-20h">19h-20h: R$ 42,500</div>
+                        <div class="bar" style="width: 60%;" data-hour="21h-22h">21h-22h: R$ 30,000</div>
+                    </div>
+                </div>
+        
+                <!-- Gráfico de Produto Mais Vendido -->
+                <div class="grafico grafico-vendas">
+                    <h3>Produtos Mais Vendidos</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="width: 75%;" data-product="Pizza Margherita">Pizza Margherita: 750 unidades</div>
+                        <div class="bar" style="width: 70%;" data-product="Hambúrguer">Hambúrguer: 700 unidades</div>
+                        <div class="bar" style="width: 50%;" data-product="Salada Caesar">Salada Caesar: 500 unidades</div>
+                    </div>
+                </div>
+        
+                <!-- Gráfico de Sazonalidade -->
+                <div class="grafico grafico-sazonalidade">
+                    <h3>Sazonalidade: Produto Mais Vendido por Estação</h3>
+                    <div class="pie-chart">
+                        <div class="pie" style="--percentage1: 26.67; --percentage2: 23.33; --percentage3: 30.00; --percentage4: 20.00;"></div>
+                        <ul class="legend">
+                            <li><span style="background-color: #4CAF50;"></span> Verão: Sorvete de Frutas - 400 unidades (26.67%)</li>
+                            <li><span style="background-color: #2196F3;"></span> Outono: Sopa de Abóbora - 350 unidades (23.33%)</li>
+                            <li><span style="background-color: #FFEB3B;"></span> Inverno: Caldo Verde - 450 unidades (30.00%)</li>
+                            <li><span style="background-color: #FF9800;"></span> Primavera: Salada Caprese - 300 unidades (20.00%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+		<!-- PRINCIPAL -->
+	</section>
+	<!-- CONTEUDO -->
+	
+
+	<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
