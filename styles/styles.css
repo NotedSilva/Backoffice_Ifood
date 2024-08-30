@@ -747,6 +747,95 @@ button:hover {
     background-color: var(--redhover);
 }
 
+.gastos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gasto {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gasto .info {
+    width: 100%;
+}
+
+.gasto .info h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+.gasto .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gasto .info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.month-expenses {
+    font-weight: bold;
+    color: var(--dark);
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--red);
+    transition: width 0.3s ease;
+}
+
+.progress-percent {
+    font-size: 0.7em;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.gasto .info button {
+    background-color: var(--red);
+    color: var(--light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.gasto .info button:hover {
+    background-color: var(--redhover);
+}
+
+
+
 /* FINANCEIRO */
 
 
@@ -917,6 +1006,92 @@ button:hover {
 
 
 
+/* RELATORIO DE VENDAS */
+
+.grafico {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart .bar {
+    display: block;
+    height: 30px;
+    margin: 10px 0;
+    background-color: var(--grey);
+    color: white;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.grafico-vendas .bar {
+    background-color: var(--red);
+}
+
+.grafico-sazonalidade .pie-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pie-chart {
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    gap: 80px;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.pie {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4CAF50 0% calc(var(--percentage1) * 1%), 
+        #2196F3 calc(var(--percentage1) * 1%) calc((var(--percentage1) + var(--percentage2)) * 1%), 
+        #FFEB3B calc((var(--percentage1) + var(--percentage2)) * 1%) calc((var(--percentage1) + var(--percentage2) + var(--percentage3)) * 1%), 
+        #FF9800 calc((var(--percentage1) + var(--percentage2) + var(--percentage3)) * 1%) 100%
+    );
+}
+
+.legend {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: var(--dark);
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.desempenho .section-title h2, h3 {
+    color: var(--dark);
+}
+
+.desempenho .section-title {
+    color: var(--dark);
+}
+
+/* RELATORIO DE VENDAS */
 
 
 
