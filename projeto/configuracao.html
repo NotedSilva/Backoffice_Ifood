@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/imgs/icons8-ifood-48.png" type="image/x-icon">
+    <title>Dashboard Ifood</title>
+</head>
+<body >
+
+    <!----  MENU LATERAL  ---->
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-info">
+            <img src="/imgs/ifood-43.svg">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link-nome">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/plano.html">
+                    <i class='bx bxs-copy-alt'></i>
+                    <span class="link-nome">Planos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/financeiro.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="link-nome">Financeiro</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/desempenho.html">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="link-nome">Desempenho</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/paraVoce.html">
+                    <i class='bx bx-plus-circle'></i>
+                    <span class="link-nome">Para você</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/relatorioVendas.html">
+                    <i class='bx bx-line-chart-down'></i>
+                    <span class="link-nome">Relatório de vendas</span>
+                </a>
+            </li>
+            <li>
+                <a href="/projeto/configuracao.html">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-nome">Configurações</span>
+                </a>
+            </li>
+            
+            <li>
+            <div class="perfil-config">
+                <div class="conteudo-perfil">
+                    <img src="/imgs/1010.png" alt="perfil">
+                    
+                    </div>
+                    <div class="nome-perfil">
+                        <div class="nome-entidade">@PratoFino</div>
+                        <div class="situacao">Restaurante Aberto</div>
+                    </div>
+                    <a href="#"><i class='bx bx-log-out' style="color: red;"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- MENU LATERAL -->
+	 
+
+  <!-- CONTEUDO -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="#" class="nav-link">Categorias</a>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden>
+        <label for="switch-mode" class="switch-mode"></label>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">99</span>
+        </a>
+        <a href="#" class="profile">
+            <img src="/imgs/1010.png">
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+		<!-- PRINCIPAL -->
+               <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Configurações</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li><a class="active" href="#">Configurações</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Componente de Configurações -->
+            <div class="config-container">
+                <div class="config-card">
+                    <h2>Informações da Conta</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Nome de Usuário:</label>
+                            <input type="text" id="username" name="username" value="@PratoFino">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="contato@pratofino.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password" name="password" placeholder="******">
+                        </div>
+                        <button type="submit" class="btn-save">Salvar Alterações</button>
+                    </form>
+                </div>
+
+
+                <div class="config-card">
+                    <h2>Segurança</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="2fa">Autenticação de Dois Fatores:</label>
+                            <input type="checkbox" id="2fa" name="2fa">
+                            <label for="2fa">Ativar</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="device-management">Gerenciar Dispositivos:</label>
+                            <button type="button" class="btn-device">Ver Dispositivos</button>
+                        </div>
+                        <button type="submit" class="btn-save">Salvar Configurações de Segurança</button>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <!-- Fim do Componente de Configurações -->
+
+        </main>
+        
+		<!-- PRINCIPAL -->
+	</section>
+	<!-- CONTEUDO -->
+	
+
+	<script src="/scripts/script.js"></script>
+
+
+</body>
+</html>
